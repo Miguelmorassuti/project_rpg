@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+
+.cardContainer {
+  background-color: #9f693fbb;
+  height: 75%;
+  width: 60%;
+  align-self: center;
+  border: 0.5px solid rgb(41, 39, 39);
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px black;
+
+}
+
+.skilBar {
+  background-color: #1a1504b7;
+  box-shadow: 2px 1px 1px black;
+  color: white;
+}
+
+.lyingName {
+  rotate: calc(270deg);
+  white-space: nowrap;
+  margin-top: 100px;
+}
+
+.containerSkilsDown {
+  background-color: #1a1504b7;
+}
+
+.skilLine {
+  border: 1px solid rgba(0, 0, 0, 0.322);
+  padding: 10px;
+  color:white;
+  }
+
+  
+
+

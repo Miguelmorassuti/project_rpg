@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+.icon{
+  font-size: 80px; 
+}
+
+.editButton{
+  color: white;
+  background-color: #1a1504e8 !important;
+  height: 60px; 
+  align-self: center;
+  font-family:'Special Elite', cursive !important;
+}
+
+.editButton:hover{
+  background-color: #9f693fbb !important;
+}
