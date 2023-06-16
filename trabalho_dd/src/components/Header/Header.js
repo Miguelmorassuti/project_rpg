@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-import './Header.css'
+import "./Header.css";
 
 const Header = ({ name }) => {
   return (
@@ -9,11 +9,17 @@ const Header = ({ name }) => {
       display="flex"
       justifyContent="center"
       paddingY={3}
-      backgroundColor= "#1a1504b7"
+      backgroundColor="#1a1504b7"
       borderRadius={5}
       width="100%"
     >
-      <Typography variant="h3" fontFamily="'Special Elite', cursive" className="cardName">{name}</Typography>
+      <Typography
+        variant="h3"
+        fontFamily="'Special Elite', cursive"
+        className="cardName"
+      >
+        {name}
+      </Typography>
     </Box>
   );
 };

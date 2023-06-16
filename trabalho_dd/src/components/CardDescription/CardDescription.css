@@ -3,8 +3,9 @@
 
 .cardContainer {
   background-color: #9f693fbb;
-  height: 75%;
-  width: 60%;
+  min-height: 700px;
+  min-width: 400px;
+  width: 55%;
   align-self: center;
   border: 0.5px solid rgb(41, 39, 39);
   border-radius: 10px;
@@ -34,6 +35,19 @@
   color:white;
   }
 
+  .imageWarrior{
+    background-image: url(../../images/warrior.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+  }
   
-
+  .imageDragon{
+    background-image: url(../../images/dragon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+  }
 

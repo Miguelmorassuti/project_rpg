@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+.containerr {
+  height: 100vh;
+  background-image: url(../../images/welcome.jpg)!important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  margin: auto;
+  justify-content:center;
+  align-items: center
+}
+

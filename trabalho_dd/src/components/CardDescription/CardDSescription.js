@@ -3,7 +3,7 @@ import { Box, Grid, Typography } from "@mui/material";
 
 import "./CardDescription.css";
 
-const CardDescription = () => {
+const CardDescription = ({ ficha }) => {
   return (
     <Box className="cardContainer">
       <Grid container height="100%">
@@ -14,20 +14,19 @@ const CardDescription = () => {
             justifyContent="space-between"
             flexDirection="column"
           >
-            <Typography color="black" fontWeight="bold">
-              "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-              velit, sed quia non numquam eius modi tempora incidunt ut labore
-              et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-              veniam , quis nostrum exercitationem ullam corporis suscipit
-              laboriosam, nisi ut aliquid ex ea commodi consequatur?vel illum
-              qui dolorem eum fugiat quo voluptas nulla pariatur?
+            <Typography color="black" fontWeight="bold" variant="h5">
+              {ficha.descricao}
             </Typography>
+
+            <Box
+              display="flex"
+              flexDirection="row"
+              justifyContent="space-around"
+              alignItems="bottom"
+            >
+              <Box className="imageDragon"></Box>
+              <Box className="imageWarrior"></Box>
+            </Box>
 
             <Grid
               container
@@ -36,32 +35,32 @@ const CardDescription = () => {
             >
               <Grid item xs={4} className="skilLine">
                 <Typography color="white" fontFamily="'Special Elite', cursive">
-                  VIDA: xx
+                  VIDA: {ficha.pontosDeVida}
                 </Typography>
               </Grid>
               <Grid item xs={4} className="skilLine">
                 <Typography color="white" fontFamily="'Special Elite', cursive">
-                  FORÇA: xx
+                  FORÇA: {ficha.forca}
                 </Typography>
               </Grid>
               <Grid item xs={4} className="skilLine">
                 <Typography color="white" fontFamily="'Special Elite', cursive">
-                  DESTREZA: xx
+                  DESTREZA: {ficha.destreza}
                 </Typography>
               </Grid>
               <Grid item xs={4} className="skilLine">
                 <Typography color="white" fontFamily="'Special Elite', cursive">
-                  INTELIGENCIA: xx
+                  INTELIGENCIA: {ficha.inteligencia}
                 </Typography>
               </Grid>
               <Grid item xs={4} className="skilLine">
                 <Typography color="white" fontFamily="'Special Elite', cursive">
-                  SABEDORIA: xx
+                  SABEDORIA: {ficha.sabedoria}
                 </Typography>
               </Grid>
               <Grid item xs={4} className="skilLine">
                 <Typography color="white" fontFamily="'Special Elite', cursive">
-                  CARISMA: xx
+                  CARISMA: {ficha.carisma}
                 </Typography>
               </Grid>
             </Grid>
@@ -77,13 +76,13 @@ const CardDescription = () => {
           >
             <Box>
               <Typography fontFamily="'Special Elite', cursive">
-                Level: xx
+                Nível: {ficha.nivel}
               </Typography>
               <Typography fontFamily="'Special Elite', cursive">
-                Class: xx
+                Class: {ficha.classe}
               </Typography>
               <Typography fontFamily="'Special Elite', cursive">
-                Raça: xx
+                Raça: {ficha.raca}
               </Typography>
             </Box>
             <Typography
